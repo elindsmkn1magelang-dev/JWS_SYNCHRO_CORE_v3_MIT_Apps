@@ -1,0 +1,15 @@
+#include <ESP8266WiFi.h>
+#include <ESP8266WebServer.h>
+#include <Adafruit_NeoPixel.h>
+#include <WiFiUdp.h>
+#include <NTPClient.h>
+#include <TimeLib.h>
+#include <RTClib.h>
+#include <PrayerTimes.h>
+#include <Wire.h>
+#include <SoftwareSerial.h>
+#include <DFRobotDFPlayerMini.h>
+#include <EEPROM.h>
+#include <DMDESP.h>
+#include <fonts/SystemFont5x7Ramping.h>
+#include <fonts/Arial_Black_16.h>
