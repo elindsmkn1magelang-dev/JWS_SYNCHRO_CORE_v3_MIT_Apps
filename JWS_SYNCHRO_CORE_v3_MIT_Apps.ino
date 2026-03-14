@@ -46,8 +46,8 @@ RTC_DS3231 rtc;
 WiFiUDP ntpUDP;
 NTPClient timeClient(ntpUDP, "time.nist.gov", 25200, 60000);
 
-const char *ssid_ntp = "Daffa_Rasya.";
-const char *pass_ntp = "1sampai8";
+const char *ssid_ntp = "SSID KAMU";
+const char *pass_ntp = "PASSWORD SSIDMU";
 
 // --- VARIABEL GLOBAL ---
 int Hour, Minute, Second, Day, Month, Year;
