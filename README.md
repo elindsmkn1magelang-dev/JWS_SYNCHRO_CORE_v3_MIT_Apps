@@ -39,4 +39,4 @@ Proyek ini adalah sistem kontrol utama (Master Side) untuk Jam Waktu Sholat (JWS
    const char *pass_ntp = "Password_WiFi_Bapak";
 
 ## Tampilan Aplikasi Android
-![Screenshot Aplikasi](IMAGE/nama_file_gambar_bapak.png)
+![Screenshot Aplikasi](IMAGE/blocks_app.png)
