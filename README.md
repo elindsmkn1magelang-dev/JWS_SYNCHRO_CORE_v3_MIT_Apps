@@ -1,4 +1,4 @@
-# JWS SYNCHRO CORE v3 - MASTER SIDE
+# JWS SYNCHRO CORE v3
 **Sistem Jam Waktu Sholat Terintegrasi (ESP8266 + MIT App Inventor)**
 
 [![Version](https://img.shields.io/badge/Version-v3.0--Stable-green)](https://github.com/elindsmkn1magelang-dev/JWS_SYNCHRO_CORE_v3_MIT_Apps)
