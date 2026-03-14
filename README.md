@@ -39,4 +39,4 @@ Proyek ini adalah sistem kontrol utama (Master Side) untuk Jam Waktu Sholat (JWS
    const char *pass_ntp = "Password_WiFi_Bapak";
    
 ### Dokumentasi Blok MIT App Inventor
-<img src="IMAGE/bloks_app.png" width="600" alt="Blok Program MIT App">
+<img src="IMAGE/bloks_app.png" width="700" alt="Dokumentasi Blok MIT App">
