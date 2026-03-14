@@ -214,8 +214,8 @@ void setup() {
   EEPROM.begin(512);
   EEPROM.get(EEPROM_ADDR, userLoc);
   if (userLoc.valid != EEPROM_VALID_KEY) {
-    userLoc.lat = -7.6425819;  // Default Turi, Sleman
-    userLoc.lon = 110.3717201;
+    userLoc.lat = -**********;  // Sesuaikan dengan lat wilayahmu
+    userLoc.lon = ***********;  // Sesuaikan dengan long wilayahmu
     userLoc.valid = EEPROM_VALID_KEY;
   }
 
