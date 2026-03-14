@@ -58,3 +58,15 @@ Berdasarkan gambar blok di atas, sistem bekerja dengan alur:
 * **Input**: Mengambil koordinat dari komponen *Location_Sensor*.
 * **Processing**: Menggabungkan IP Static alat (`192.168.4.1`) dengan parameter lokasi menggunakan blok *Join Text*.
 * **Output**: Mengirim perintah HTTP GET melalui komponen *Web1* untuk memicu fungsi `handleUpdateLocation` pada koding Arduino.
+
+### 🔐 Langkah Konfigurasi WiFi (Keamanan Jaringan)
+Sebelum melakukan sinkronisasi, siswa wajib memastikan konfigurasi keamanan pada sisi Firmware (Arduino IDE) dan Smartphone sama:
+
+1. **Konfigurasi Firmware**: 
+   - Buka file `src/JWS_v3_MASTER_CORE_STABLE.ino`.
+   - Cari baris `WiFi.softAP("JWS-SMK-ENGINEERING", "12345678");`.
+   - Siswa diperbolehkan mengubah Password tersebut sebagai latihan dasar keamanan jaringan IoT.
+2. **Koneksi Smartphone**:
+   - Cari SSID **"JWS-SMK-ENGINEERING"** pada pengaturan WiFi HP.
+   - Masukkan Password yang sesuai (Default: `12345678`).
+   - Jika muncul peringatan *"WiFi tidak memiliki akses internet"*, pilih **"Tetap Terhubung"** agar komunikasi data lokal ke ESP8266 tidak terputus.
