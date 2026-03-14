@@ -40,3 +40,21 @@ Proyek ini adalah sistem kontrol utama (Master Side) untuk Jam Waktu Sholat (JWS
    
 ### Dokumentasi Blok MIT App Inventor
 ![Blok Program MIT App](IMAGE/blocks_app.png)
+
+### 📱 Cara Penggunaan Aplikasi Android
+Setelah menginstal file APK (atau melalui pendampingan file `.aia`), ikuti langkah berikut untuk sinkronisasi alat:
+
+1. **Koneksi Jaringan**: Pastikan Smartphone Bapak/Ibu terhubung ke WiFi dengan SSID: **"JWS-SMK-ENGINEERING"**.
+2. **Aktifkan GPS**: Pastikan fitur Lokasi (GPS) pada smartphone sudah dalam kondisi aktif.
+3. **Buka Aplikasi**: Jalankan aplikasi JWS Controller di Smartphone.
+4. **Sinkronisasi**:
+   - Tunggu hingga angka **Latitude** dan **Longitude** muncul (menandakan GPS sudah mengunci).
+   - Tekan tombol **"Update Lokasi ke Alat"**.
+   - Sistem akan mengirimkan data via protokol HTTP ke ESP8266.
+5. **Verifikasi**: Lihat pada modul JWS, jika koordinat berubah dan waktu sholat terupdate, maka sinkronisasi berhasil.
+
+### 🧩 Penjelasan Logika Blok (Untuk Siswa)
+Berdasarkan gambar blok di atas, sistem bekerja dengan alur:
+* **Input**: Mengambil koordinat dari komponen *Location_Sensor*.
+* **Processing**: Menggabungkan IP Static alat (`192.168.4.1`) dengan parameter lokasi menggunakan blok *Join Text*.
+* **Output**: Mengirim perintah HTTP GET melalui komponen *Web1* untuk memicu fungsi `handleUpdateLocation` pada koding Arduino.
